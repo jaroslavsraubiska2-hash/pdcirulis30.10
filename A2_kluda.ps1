@@ -9,5 +9,5 @@
 
 Get-Process |
     Where-Object { $_.CPU -ne $null } |
-    Sort-Object CPU |
+    Sort-Object CPU -Descendin |
     Select-Object -First 5 Name, CPU
